@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div"><p>Hello my name is dikshit</p></div>
+    <button id="btn1">show innerHTML</button>
+    <button id="btn2">show innerText</button>
+    <div id="text"></div>
+</body>
+<script>
+    //Create an HTML element with some text that includes HTML tags. Write two JavaScript functions: one that retrieves the innerHTML and one that retrieves the textContent of the element, and display these values elsewhere on the page.
+   const div = document.getElementById('div');
+   const text = document.getElementById('text')
+   const btn1 = document.getElementById('btn1')
+   const btn2 = document.getElementById('btn2')
+   function showInnerHtml(){
+     text.innerText = div.innerHTML;
+   }
+   function showInnerText(){
+     text.innerText = div.innerText;
+   }
+   btn1.addEventListener('click',()=>{
+    showInnerHtml();
+   })
+   btn2.addEventListener('click',()=>{
+    showInnerText();
+   })
+</script>
+</html>

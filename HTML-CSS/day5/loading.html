@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading bar</title>
+    <style>
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle{
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+            border-radius: 50%;
+            border: 20px solid rgb(32, 21, 21);
+            border-left: none;
+            border-right: none;
+            border-bottom: none;     
+            animation: spinner 3s infinite linear ease;     
+        }
+        @keyframes spinner {
+            from{
+                transform: translate(0deg);
+            }
+            to{
+                transform: translate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>

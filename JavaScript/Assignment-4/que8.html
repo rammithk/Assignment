@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter your name" id="name">
+    <input type="number" placeholder="enter your number" id="number">
+    <input type="text" placeholder="enter your email" id="email">
+    <input type="password" placeholder="enter password" id="password">
+    <button id="btn">submit</button>
+    <div id="text"></div>
+   
+</body>
+<script>
+    //Write a program that retrieves the value of an input field and displays it in another part of the document when a button is pressed.
+    const name = document.getElementById('name');
+    const number = document.getElementById('number');
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+    const text = document.getElementById('text');
+    const btn = document.getElementById('btn');
+    const Break = document.getElementById('br');
+    
+    btn.addEventListener('click',()=>{
+        
+        text.append(`name is ${name.value}`);
+        const br1=document.createElement("br");
+        text.append(br1);
+        text.append(`number is ${number.value}`);
+        const br2=document.createElement("br");
+        text.append(br2);
+        text.append(`email is  ${email.value}`);
+        const br3=document.createElement("br");
+        text.append(br3);
+        text.append(`password is ${password.value}`);
+      
+    })
+
+</script>
+</html>

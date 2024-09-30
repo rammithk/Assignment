@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Sign Up Clone</title>
+    <link rel="stylesheet" href="frontpage.css">
+</head>
+<body>
+    <div class="header">
+        <div class="login-container">
+            <form class="login-form">
+                <input type="text" placeholder="Email or Phone" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+                <a href="#">Forgotten account?</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="signup-container">
+            <h1>Create an account</h1>
+            <p>It's free and always will be.</p>
+            <form class="signup-form">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Surname" required>
+                <input type="email" placeholder="Mobile number or email" required>
+                <input type="password" placeholder="New password" required>
+                
+                <label>Birthday</label>
+                <div class="birthday-selection">
+                    <select>
+                        <option value="">Day</option>
+                        <!-- Days 1 to 31 -->
+                        <script>
+                            for (let day = 1; day <= 31; day++) {
+                                document.write('<option value="' + day + '">' + day + '</option>');
+                            }
+                        </script>
+                    </select>
+
+                    <select>
+                        <option value="">Month</option>
+                        <!-- Months by name -->
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+
+                    <select>
+                        <option value="">Year</option>
+                        <!-- Years from 1900 to 2024 -->
+                        <script>
+                            const currentYear = new Date().getFullYear();
+                            for (let year = currentYear; year >= 1900; year--) {
+                                document.write('<option value="' + year + '">' + year + '</option>');
+                            }
+                        </script>
+                    </select>
+                    <a href="#">Why do I need to provide my date of birth?</a>
+                </div>
+                
+                <label>Gender</label>
+                <div class="gender-selection">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                </div>
+                
+                <p>By clicking Create an account, you agree to our <a href="#">Terms</a> and that you have read our <a href="#">Data Policy</a>, including our <a href="#">Cookie Use</a>.</p>
+                
+                <button type="submit" class="signup-button">Create an account</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="#">Create a Page</a> for a celebrity, band or business.
+    </div>
+</body>
+</html>

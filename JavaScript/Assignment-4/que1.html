@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <p id="para">Click button to red Me</p>
+      <button id="btn">click</button>
+</body>
+<script>
+    //  Create an HTML file with a paragraph element. Write a JavaScript    function to change the text  content of the paragraph when a button is clicked.
+    const para = document.querySelector('#para');
+    const btn = document.querySelector('#btn');
+    btn.onclick = function(){
+        para.style.color= 'red';
+    }
+</script>
+</html>

@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        #container{
+          border: 3px solid black;
+          background-color:skyblue;
+          width: 200px;
+          /* padding:20px; */
+          margin: auto;
+          /* padding:100px 150px 200px 250px;  ⭐  top right bottom left */
+        }
+        #main{
+            width: 200px;
+            height: 200px;
+            border: 100px solid black;
+            background-color: aqua;
+            padding: 50px;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        #alternate{
+            width: 200px;
+            height: 200px;
+            border: 100px solid black;
+            background-color: aqua;
+            padding: 50px;
+            margin: auto;
+                   /*without using border box*/
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium possimus omnis minima quis cupiditate iste nihil distinctio eum, quaerat ut?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat eaque laudantium tempora obcaecati, maxime perspiciatis consequuntur? Minima quas est, accusamus dolores, asperiores suscipit veniam at molestias rerum eligendi porro debitis!</p>
+    </div>
+    <div id="main">
+        main
+    </div>
+    <div id="alternate">
+        alternate
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widthbox-=device-widthbox-, initial-scale=1.0">
+    <title>flexBox</title>
+    <style>
+        .container{
+           border: 3px solid bbox-lack;
+           height: 50vh;
+           display: flex;
+           /* flex-direction: column-reverse; */
+           /* flex-direction: row-reverse; */
+           flex-wrap:wrap-reverse;
+           /* align-items: start; */
+           /* align-items: baseline; */
+           /* align-items: flex-end; */
+           /* align-items: first baseline; */
+           /* align-items: last baseline; */
+           /* align-items: safe; */
+           /* align-items: stretch; */
+           /* align-items: self-start; */
+           /* align-items: ; */
+           background-color: black;
+           gap: 10px;
+           flex-flow: row wrap;
+       
+           /* justify-content:space-around; */
+           /* justify-content: space-between; */
+           justify-content: center;
+           align-items: center;
+           /* justify-content: center; */
+
+         /* align-content:end; */
+         box-sizing: border-box;
+        }
+        .box{
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           border: 2px solid gbox-reen;
+           background-color: green;
+           width:100px;
+           height: 20px;
+           font-size: large;
+           color: white;
+        }
+        #box-1{
+          /* order: 3; */
+          /* flex-grow: 1; */
+          /* flex-shrink:2; */
+          align-self: flex-start;
+        }
+        #box-6{
+            align-self: flex-end;
+        }
+        #box-8{
+            align-self: first baseline;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <!-- .container>.box#box-${box-$}*8 -->
+    <div class="container">
+      <div id="box-1" class="box">1</div>
+      <div id="box-2" class="box">2</div>
+      <div id="box-3" class="box">3</div>
+      <div id="box-4" class="box">4</div>
+      <div id="box-5" class="box">5</div>
+      <div id="box-6" class="box">6</div>
+      <div id="box-7" class="box">7</div>
+      <div id="box-8" class="box">8</div>
+    </div>
+</body>
+</html>

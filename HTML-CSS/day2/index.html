@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+          #text{
+            color: white;
+            /* color: hsla(0, 0%, 0%, 0);    transparent color */
+            background-color: black;
+            font-size: 40px;
+            font-family: monospace;
+            font-style: italic;
+            text-decoration: underline;
+            text-transform: capitalize;
+            text-align: center;
+            line-height: 100px;
+         }
+         .para{
+            background-color: yellow;
+            color: grey;
+            width: fit-content;
+         } 
+
+         /* priority */
+         /* id > class > tag */ 
+
+         /* inline > internal*/
+
+         /* internal and external css are only do overlap */
+     div{
+        width: 100px;
+        height: 100px;
+        border: 5px black;
+        border-radius: 50%;
+        box-shadow: 10px 10px 10px black;   
+     }
+     img{
+        box-shadow: 2px 2px 2px  black;
+        /* mix-blend-mode: difference; */
+        filter: drop-shadow(10px 10px 10px black);
+     }
+    </style>
+</head>
+<body>
+    
+    <div></div>
+    <p id="text" class="para" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, illo? </p>
+    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, nobis.</p>
+    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, nobis.</p>
+    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, nobis.</p>
+    
+</body>
+</html>
